@@ -24,5 +24,16 @@ namespace lesson2
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxOutput.Text = "Hello World!!!";
+        }
+
+        private void buttonHello_Click(object sender, RoutedEventArgs e)
+        {
+            labelTest.Content = textBoxOutput.Text;
+            textBoxOutput.Text = "";
+        }
     }
 }
